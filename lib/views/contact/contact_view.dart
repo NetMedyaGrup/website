@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/widgets/embedded_map.dart';
+import 'package:flutter_application_2/widgets/embedded_map_stub.dart';
 import 'package:flutter_application_2/widgets/footer.dart';
 import 'package:flutter_application_2/widgets/header.dart';
 import 'package:flutter_application_2/l10n/strings.dart';

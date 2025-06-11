@@ -1,3 +1,6 @@
+import 'dart:ui_web' as ui;
+import 'dart:html' as html;
+
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -34,6 +37,17 @@ class MyScrollBehavior extends MaterialScrollBehavior {
 }
 
 void main() {
+  if (kIsWeb) {
+    ui.platformViewRegistry.registerViewFactory('google-map-iframe', (
+      int viewId,
+    ) {
+      return html.IFrameElement()
+        ..src = 'https://www.google.com/maps/embed?pb=!1m18!...'
+        ..style.border = '0'
+        ..style.width = '100%'
+        ..style.height = '100%';
+    });
+  }
   runApp(const CreodiveCloneApp());
 }
 

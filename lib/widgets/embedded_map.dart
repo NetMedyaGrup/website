@@ -1,13 +1,20 @@
-import 'dart:html' as html;
+// lib/embedded_map.dart
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'dart:html' as html;
 
-class EmbeddedMap extends StatelessWidget {
-  const EmbeddedMap({Key? key}) : super(key: key);
+// stub/web şartlı import
+import 'embedded_map_stub.dart' if (dart.library.html) 'embedded_map_web.dart';
+
+class EmbeddedMapToggle extends StatelessWidget {
+  const EmbeddedMapToggle({Key? key}) : super(key: key);
 
   void _scrollToMap() {
-    // Jump to the #embedded-map anchor in index.html
-    html.window.location.hash = 'embedded-map';
+    if (kIsWeb) {
+      html.document
+          .getElementById('embedded-map')
+          ?.scrollIntoView(html.ScrollAlignment.TOP);
+    }
   }
 
   @override
