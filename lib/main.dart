@@ -37,27 +37,6 @@ class MyScrollBehavior extends MaterialScrollBehavior {
 }
 
 void main() {
-  // Use ui.platformViewRegistry for web view registration
-  if (kIsWeb) {
-    // `platformViewRegistry` (küçük “p”) kullanılıyor:
-    // ignore: undefined_prefixed_name
-    ui.platformViewRegistry.registerViewFactory('kuula-iframe', (int viewId) {
-      final String kuulaUrl =
-          'https://kuula.co/share/collection/71f3D?logo=-1&info=0&fs=1&vr=1&zoom=1&gyro=0&thumbs=1';
-
-      final html.IFrameElement element =
-          html.IFrameElement()
-            ..src = kuulaUrl
-            ..style.border = 'none'
-            ..allow = 'xr-spatial-tracking; gyroscope; accelerometer'
-            ..allowFullscreen = true
-            ..width = '100%'
-            ..height = '640';
-
-      return element;
-    });
-  }
-
   runApp(const CreodiveCloneApp());
 }
 
