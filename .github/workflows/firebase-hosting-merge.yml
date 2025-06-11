@@ -27,7 +27,6 @@ jobs:
       - name: Install & build Flutter Web
         run: |
           flutter pub get
-          # DOM renderer (html) ile derleyin, böylece platformViewRegistry erişilebilir
           flutter build web --release --web-renderer html
 
       # Firebase CLI kurulumu
