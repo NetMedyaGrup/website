@@ -12,26 +12,26 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # ① Node.js gerekiyorsa
+      # Node.js gerekiyorsa
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
 
-      # ② Flutter kurulumu
-      - uses: actions/setup-flutter@v2
+      # Flutter kurulumu (doğru action)
+      - uses: flutter/setup-flutter@v2
         with:
-          flutter-version: stable # veya spesifik bir sürüm
+          flutter-version: "stable" # veya spesifik bir sürüm, örn. '3.10.6'
 
-      # ③ Flutter paketlerini indir ve Web build oluştur
+      # Flutter paketlerini indir ve Web build oluştur
       - name: Install & build Flutter Web
         run: |
           flutter pub get
           flutter build web --release
 
-      # ④ Firebase CLI kurulumu
+      # Firebase CLI kurulumu
       - run: npm install -g firebase-tools
 
-      # ⑤ Deploy
+      # Deploy
       - name: Deploy to Firebase Hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
