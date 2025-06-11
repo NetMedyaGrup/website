@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/l10n/strings.dart';
 import 'package:flutter_application_2/widgets/embedded_map.dart';
-import 'package:flutter_application_2/widgets/embedded_map_stub.dart';
 import 'package:flutter_application_2/widgets/site_logo.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';

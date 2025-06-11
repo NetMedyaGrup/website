@@ -38,15 +38,27 @@ class MyScrollBehavior extends MaterialScrollBehavior {
 
 void main() {
   if (kIsWeb) {
-    ui.platformViewRegistry.registerViewFactory('google-map-iframe', (
-      int viewId,
-    ) {
-      return html.IFrameElement()
-        ..src = 'https://www.google.com/maps/embed?pb=!1m18!...'
-        ..style.border = '0'
-        ..style.width = '100%'
-        ..style.height = '100%';
-    });
+    // Google Map iframe
+    ui.platformViewRegistry.registerViewFactory(
+      'google-map-iframe',
+      (int viewId) =>
+          html.IFrameElement()
+            ..src =
+                'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d765.0644611766978!2d32.85662796964043!3d39.91324562687037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34fa8ef9d7397%3A0xb2024b95b2d8b4e9!2sKavakl%C4%B1dere%2C%20Esat%20Cd.%2012%2F1%20Bakanl%C4%B1klar%20D%3A2%2C%2006660%20%C3%87ankaya%2FAnkara!5e0!3m2!1sen!2str!4v1749678004541!5m2!1sen!2str'
+            ..style.border = '0'
+            ..style.width = '100%'
+            ..style.height = '100%',
+    );
+    // Kuula 360° iframe
+    ui.platformViewRegistry.registerViewFactory(
+      'kuula-tour-iframe',
+      (int viewId) =>
+          html.IFrameElement()
+            ..src = 'https://kuula.co/share/collection/71f3D?logo=-1'
+            ..style.border = 'none'
+            ..style.width = '100%'
+            ..style.height = '100%',
+    );
   }
   runApp(const CreodiveCloneApp());
 }
