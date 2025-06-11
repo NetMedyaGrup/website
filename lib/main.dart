@@ -22,10 +22,8 @@ import 'package:flutter_application_2/views/work/work_view.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_application_2/core/theme/app_theme.dart';
 
-// Only import these for web builds
-// ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
-import 'dart:ui' as ui show platformViewRegistry;
+import 'dart:ui' as ui;
 
 /// Fareyle de sürüklemeyi aktif eden scroll behavior
 class MyScrollBehavior extends MaterialScrollBehavior {
