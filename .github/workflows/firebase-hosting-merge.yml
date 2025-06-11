@@ -18,9 +18,9 @@ jobs:
           node-version: "18"
 
       # ② Flutter kurulumu
-      - uses: subosito/flutter-action@v2
+      - uses: actions/setup-flutter@v2
         with:
-          flutter-version: "stable" # veya spesifik bir sürüm
+          flutter-version: stable # veya spesifik bir sürüm
 
       # ③ Flutter paketlerini indir ve Web build oluştur
       - name: Install & build Flutter Web
