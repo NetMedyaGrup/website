@@ -28,7 +28,7 @@ jobs:
       - name: Install & build Flutter Web
         run: |
           flutter pub get
-          flutter build web --release --web-renderer html
+          flutter build web --release
 
       # Firebase CLI kurulumu
       - run: npm install -g firebase-tools
