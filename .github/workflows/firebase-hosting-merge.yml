@@ -17,10 +17,11 @@ jobs:
         with:
           node-version: "18"
 
-      # Flutter kurulumu (doğru action)
-      - uses: flutter/setup-flutter@v2
+      # Flutter kurulumu (subosito kullan, channel olarak stable ver)
+      - uses: subosito/flutter-action@v2
         with:
-          flutter-version: "stable" # veya spesifik bir sürüm, örn. '3.10.6'
+          channel: stable # stable kanalı indirilecek
+          cache: true # sonraki sefer hızlandırır
 
       # Flutter paketlerini indir ve Web build oluştur
       - name: Install & build Flutter Web
