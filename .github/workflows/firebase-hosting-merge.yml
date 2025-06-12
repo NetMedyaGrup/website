@@ -18,12 +18,9 @@ jobs:
           node-version: "18"
 
       - name: Setup Flutter
-        uses: subosito/flutter-action@v2
+        uses: flutter/setup-flutter@v2
         with:
-          # Geçerli bir sürüm yazın! Örneğin:
-          flutter-version: "3.3.2"
-          channel: "stable"
-          cache: true
+          flutter-version: "stable"
 
       # Flutter paketlerini indir ve Web build oluştur
       - name: Install & build Flutter Web
