@@ -17,10 +17,11 @@ jobs:
         with:
           node-version: "18"
 
-      # Flutter kurulumu (subosito kullan, channel olarak stable ver)
-      - uses: subosito/flutter-action@v2
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.32.2" # kullandığınız sürümü buraya sabitleyin
+          # Geçerli bir sürüm yazın! Örneğin:
+          flutter-version: "3.3.2"
           channel: "stable"
           cache: true
 
