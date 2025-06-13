@@ -24,6 +24,7 @@ import 'package:flutter_application_2/views/teams/team_view.dart';
 import 'package:flutter_application_2/views/work/work_view.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_application_2/core/theme/app_theme.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 /// Fareyle de sürüklemeyi aktif eden scroll behavior
 class MyScrollBehavior extends MaterialScrollBehavior {
@@ -37,6 +38,7 @@ class MyScrollBehavior extends MaterialScrollBehavior {
 }
 
 void main() {
+  setPathUrlStrategy();
   if (kIsWeb) {
     // Google Map iframe
     ui.platformViewRegistry.registerViewFactory(
@@ -93,7 +95,7 @@ class _CreodiveCloneAppState extends State<CreodiveCloneApp> {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      initialRoute: '/',
+      //initialRoute: '/',
       routes: {
         '/':
             (_) =>

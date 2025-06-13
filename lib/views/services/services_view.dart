@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/widgets/header.dart';
 import 'package:flutter_application_2/widgets/footer.dart';
 import 'package:flutter_application_2/l10n/strings.dart';
+import 'package:flutter_application_2/widgets/middle_click_link.dart';
 
 /// Asset path sabitleri
 const String advertisingManagementConsultancyImg =
@@ -20,6 +21,21 @@ const String virtualTourImg = 'assets/images/services/virtual_tour.jpg';
 const String visualMappingModelingImg =
     'assets/images/services/visual_mapping_modeling.jpg';
 const String webDesignDevImg = 'assets/images/services/web_design_dev.jpg';
+
+/// Hizmet verilerini tutan model
+class _ServiceData {
+  final String imageAsset;
+  final String title;
+  final String description;
+  final String routeName;
+
+  _ServiceData({
+    required this.imageAsset,
+    required this.title,
+    required this.description,
+    required this.routeName,
+  });
+}
 
 class ServicesView extends StatelessWidget {
   final VoidCallback toggleTheme;
@@ -271,9 +287,8 @@ class ServicesView extends StatelessWidget {
   }
 
   Widget _buildServiceCard(_ServiceData svc, BuildContext context) {
-    final lang = currentLanguageCode;
-    return GestureDetector(
-      onTap: () => Navigator.of(context).pushNamed(svc.routeName),
+    return MiddleClickLink(
+      url: svc.routeName,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
         child: Stack(
@@ -314,6 +329,7 @@ class ServicesView extends StatelessWidget {
                     ).textTheme.bodyMedium?.copyWith(color: Colors.white70),
                   ),
                   const SizedBox(height: 16),
+                  // Butonu ister bırak, ister MiddleClickLink ile de sar
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.orangeAccent,
@@ -325,10 +341,14 @@ class ServicesView extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    onPressed:
-                        () => Navigator.of(context).pushNamed(svc.routeName),
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/contact');
+                    },
                     child: Text(
-                      AppStrings.get('getQuote', lang),
+                      AppStrings.get(
+                        'getQuote',
+                        Localizations.localeOf(context).languageCode,
+                      ),
                       style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w600,
@@ -343,19 +363,4 @@ class ServicesView extends StatelessWidget {
       ),
     );
   }
-}
-
-/// Hizmet verilerini tutan model
-class _ServiceData {
-  final String imageAsset;
-  final String title;
-  final String description;
-  final String routeName;
-
-  _ServiceData({
-    required this.imageAsset,
-    required this.title,
-    required this.description,
-    required this.routeName,
-  });
 }

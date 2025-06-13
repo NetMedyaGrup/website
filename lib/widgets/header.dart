@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/l10n/strings.dart';
+import 'package:flutter_application_2/widgets/middle_click_link.dart';
 import 'package:flutter_application_2/widgets/site_logo.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'hover_menu.dart';
@@ -329,46 +330,59 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
             SiteLogo(height: 80, width: 160, onTap: onLogoTap),
             const Spacer(),
             HoverMenu(
-              title: Row(
-                children: [
-                  Text(
-                    AppStrings.get('corporate', lang),
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+              title: MiddleClickLink(
+                url: '/about',
+                child: Row(
+                  children: [
+                    Text(
+                      AppStrings.get('corporate', lang),
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  const Icon(Icons.keyboard_arrow_down, color: Colors.white),
-                ],
+                    const Icon(Icons.keyboard_arrow_down, color: Colors.white),
+                  ],
+                ),
               ),
               onTap: onAboutTap,
               items: [
-                _menuItem(context, 'about', onAboutTap),
-                _menuItem(context, 'careers', onCareersTap),
+                _menuItemLink(context, 'about', '/about'),
+                _menuItemLink(context, 'careers', '/career'),
               ],
             ),
             const SizedBox(width: 24),
-            TextButton(
-              style: TextButton.styleFrom(foregroundColor: Colors.white),
-              onPressed: onReferencesTap,
-              child: Text(
-                AppStrings.get('references', lang),
-                style: const TextStyle(fontWeight: FontWeight.bold),
+            MiddleClickLink(
+              url: '/references',
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Text(
+                  AppStrings.get('references', lang),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ),
             const SizedBox(width: 24),
-            TextButton(
-              style: TextButton.styleFrom(foregroundColor: Colors.white),
-              onPressed: onWorksTap,
-              child: Text(
-                AppStrings.get('works', lang),
-                style: const TextStyle(fontWeight: FontWeight.bold),
+            MiddleClickLink(
+              url: '/works',
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Text(
+                  AppStrings.get('works', lang),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ),
             const SizedBox(width: 24),
             HoverMenu(
-              title: InkWell(
-                onTap: onServicesTap,
+              title: MiddleClickLink(
+                url: '/services',
                 child: Row(
                   children: [
                     Text(
@@ -384,24 +398,29 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
               ),
               onTap: onServicesTap,
               items: [
-                _menuItem(context, 'videoProd', onVideoProdTap),
-                _menuItem(context, 'googleMeta', onGoogleMetaTap),
-                _menuItem(context, 'mapping', onMappingTap),
-                _menuItem(context, 'tour360', onTour360Tap),
-                _menuItem(context, 'adConsult', onAdConsultTap),
-                _menuItem(context, 'socialMedia', onSocialMediaTap),
-                _menuItem(context, 'graphicDesign', onGraphicDesignTap),
-                _menuItem(context, 'webDev', onWebDevTap),
-                _menuItem(context, 'logoDesign', onLogoDesignTap),
+                _menuItemLink(context, 'videoProd', '/videoProd'),
+                _menuItemLink(context, 'googleMeta', '/googleMeta'),
+                _menuItemLink(context, 'mapping', '/mapping'),
+                _menuItemLink(context, 'tour360', '/tour360'),
+                _menuItemLink(context, 'adConsult', '/adConsult'),
+                _menuItemLink(context, 'socialMedia', '/socialMedia'),
+                _menuItemLink(context, 'graphicDesign', '/graphicDesign'),
+                _menuItemLink(context, 'webDev', '/webDev'),
+                _menuItemLink(context, 'logoDesign', '/logoDesign'),
               ],
             ),
             const SizedBox(width: 24),
-            TextButton(
-              style: TextButton.styleFrom(foregroundColor: Colors.white),
-              onPressed: onContactTap,
-              child: Text(
-                AppStrings.get('contact_us', lang),
-                style: const TextStyle(fontWeight: FontWeight.bold),
+            MiddleClickLink(
+              url: '/contact',
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Text(
+                  AppStrings.get('contact_us', lang),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ),
             const Spacer(),
@@ -430,20 +449,25 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
                   () => _launch('https://www.instagram.com/netmedyagrup/'),
             ),
             const SizedBox(width: 24),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(102, 153, 204, 255),
-                foregroundColor: Colors.white,
+            MiddleClickLink(
+              url: '/contact',
+              child: Container(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 16,
                   vertical: 12,
                 ),
-                shape: RoundedRectangleBorder(
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(102, 153, 204, 255),
                   borderRadius: BorderRadius.circular(4),
                 ),
+                child: Text(
+                  AppStrings.get('getQuote', lang),
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
-              onPressed: onContactTap,
-              child: Text(AppStrings.get('getQuote', lang)),
             ),
           ],
         ),
@@ -467,4 +491,21 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
       ),
     );
   }
+}
+
+Widget _menuItemLink(BuildContext ctx, String key, String route) {
+  final lang = Localizations.localeOf(ctx).languageCode;
+  return MiddleClickLink(
+    url: route,
+    child: Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      child: Text(
+        AppStrings.get(key, lang),
+        style: const TextStyle(
+          color: Colors.black87,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    ),
+  );
 }

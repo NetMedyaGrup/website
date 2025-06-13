@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/widgets/middle_click_link.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flutter_application_2/core/constants/colors.dart';
 import 'package:flutter_application_2/l10n/strings.dart';
@@ -375,24 +376,25 @@ class DesktopHomeContentState extends State<DesktopHomeContent> {
                   ),
                 ),
                 const SizedBox(height: 16),
-                ElevatedButton(
-                  onPressed: () => Navigator.of(context).pushNamed('/contact'),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: const Color(0xFFFF0054),
+                MiddleClickLink(
+                  url: '/contact',
+                  child: Container(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 32,
                       vertical: 16,
                     ),
-                    shape: RoundedRectangleBorder(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                  ),
-                  child: Text(
-                    AppStrings.get('getQuote', lang),
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                    alignment: Alignment.center,
+                    child: Text(
+                      AppStrings.get('contact_us', lang),
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF444444),
+                      ),
                     ),
                   ),
                 ),
@@ -548,16 +550,28 @@ class DesktopHomeContentState extends State<DesktopHomeContent> {
           style: TextStyle(fontSize: isMobile ? 14 : 16, height: 1.5),
         ),
         const SizedBox(height: 24),
-        ElevatedButton(
-          onPressed: () => Navigator.of(context).pushNamed('/services'),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF444444),
+        MiddleClickLink(
+          url: '/services',
+          child: Container(
             padding: EdgeInsets.symmetric(
-              horizontal: isMobile ? 16 : 24,
-              vertical: isMobile ? 12 : 16,
+              horizontal: isMobile ? 16 : 20,
+              vertical: isMobile ? 12 : 14,
+            ),
+            decoration: BoxDecoration(
+              color: const Color(0xFF444444),
+              borderRadius: BorderRadius.circular(8),
+            ),
+
+            alignment: Alignment.center,
+            child: Text(
+              AppStrings.get('detail_info', lang),
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: isMobile ? 14 : 16,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
-          child: Text(AppStrings.get('detail_info', lang)),
         ),
       ],
     );
@@ -627,23 +641,23 @@ class DesktopHomeContentState extends State<DesktopHomeContent> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 12),
-                        ElevatedButton(
-                          onPressed:
-                              () => Navigator.of(context).pushNamed('/contact'),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white,
-                            foregroundColor: const Color(0xFF444444),
+                        const SizedBox(height: 6),
+                        MiddleClickLink(
+                          url: '/contact',
+                          child: Container(
                             padding: const EdgeInsets.symmetric(vertical: 12),
-                            shape: RoundedRectangleBorder(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
                             ),
-                          ),
-                          child: Text(
-                            AppStrings.get('contact_us', lang),
-                            style: const TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold,
+                            alignment: Alignment.center,
+                            child: Text(
+                              AppStrings.get('contact_us', lang),
+                              style: const TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFF444444),
+                              ),
                             ),
                           ),
                         ),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/widgets/header.dart';
 import 'package:flutter_application_2/widgets/footer.dart';
 import 'package:flutter_application_2/l10n/strings.dart';
+import 'package:flutter_application_2/widgets/middle_click_link.dart';
 
 /// "Çalışmalarımız" sayfası
 class CareerView extends StatefulWidget {
@@ -198,16 +199,23 @@ class _CareerViewState extends State<CareerView> {
                             padding: const EdgeInsets.symmetric(vertical: 8),
                             child: Align(
                               alignment: Alignment.center,
-                              child: OutlinedButton(
-                                onPressed:
-                                    () => Navigator.pushNamed(
-                                      context,
-                                      '/contact',
+                              child: MiddleClickLink(
+                                url: '/contact',
+                                child: Container(
+                                  constraints: const BoxConstraints(
+                                    minWidth: 80,
+                                    minHeight: 32,
+                                  ),
+                                  alignment: Alignment.center,
+                                  child: Text(
+                                    AppStrings.get('getQuote', lang),
+                                    style: TextStyle(
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
+                                      fontWeight: FontWeight.bold,
                                     ),
-                                style: OutlinedButton.styleFrom(
-                                  minimumSize: const Size(80, 32),
+                                  ),
                                 ),
-                                child: Text(AppStrings.get('getQuote', lang)),
                               ),
                             ),
                           ),

@@ -4,6 +4,7 @@ import 'package:flutter_application_2/widgets/header.dart';
 import 'package:flutter_application_2/widgets/footer.dart';
 import 'package:flutter_application_2/l10n/strings.dart';
 import 'package:flutter_application_2/widgets/kuula_embed_view.dart';
+import 'package:flutter_application_2/widgets/middle_click_action.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class WorksView extends StatefulWidget {
@@ -164,8 +165,8 @@ class _WorksViewState extends State<WorksView> {
                 ),
                 itemBuilder: (_, idx) {
                   final p = projects[idx];
-                  return InkWell(
-                    onTap: () {
+                  return MiddleClickAction(
+                    onActivate: () {
                       // 1: Ürün Fotoğraf
                       if (p.title == titles[1]) {
                         _openLink(

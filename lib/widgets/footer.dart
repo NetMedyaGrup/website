@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/l10n/strings.dart';
 import 'package:flutter_application_2/widgets/embedded_map.dart';
+import 'package:flutter_application_2/widgets/middle_click_link.dart';
 import 'package:flutter_application_2/widgets/site_logo.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -8,8 +9,8 @@ import 'package:url_launcher/url_launcher.dart';
 /// Küçük model sınıfı, başlık + tıklama callback’i için
 class _Link {
   final String text;
-  final VoidCallback onTap;
-  _Link(this.text, this.onTap);
+  final String route;
+  _Link(this.text, this.route);
 }
 
 class Footer extends StatelessWidget {
@@ -80,23 +81,21 @@ class Footer extends StatelessWidget {
         children: [
           // Mobilde dikey, masaüstünde yatay düzen
           if (isMobile) ...[
-            _buildLogoSection(lang),
-            const SizedBox(height: 24),
             _buildLinksSection(lang, AppStrings.get('services', lang), [
-              _Link(AppStrings.get('videoProd', lang), onVideoProdTap),
-              _Link(AppStrings.get('googleMeta', lang), onGoogleMetaTap),
-              _Link(AppStrings.get('mapping', lang), onMappingTap),
-              _Link(AppStrings.get('tour360', lang), onTour360Tap),
-              _Link(AppStrings.get('adConsult', lang), onAdConsultTap),
-              _Link(AppStrings.get('socialMedia', lang), onSocialMediaTap),
-              _Link(AppStrings.get('graphicDesign', lang), onGraphicDesignTap),
-              _Link(AppStrings.get('webDev', lang), onWebDevTap),
-              _Link(AppStrings.get('logoDesign', lang), onLogoDesignTap),
+              _Link(AppStrings.get('videoProd', lang), '/videoProd'),
+              _Link(AppStrings.get('googleMeta', lang), '/googleMeta'),
+              _Link(AppStrings.get('mapping', lang), '/mapping'),
+              _Link(AppStrings.get('tour360', lang), '/tour360'),
+              _Link(AppStrings.get('adConsult', lang), '/adConsult'),
+              _Link(AppStrings.get('socialMedia', lang), '/socialMedia'),
+              _Link(AppStrings.get('graphicDesign', lang), '/graphicDesign'),
+              _Link(AppStrings.get('webDev', lang), '/webDev'),
+              _Link(AppStrings.get('logoDesign', lang), '/logoDesign'),
             ]),
             const SizedBox(height: 24),
             _buildLinksSection(lang, AppStrings.get('corporate', lang), [
-              _Link(AppStrings.get('about', lang), onAboutTap),
-              _Link(AppStrings.get('careers', lang), onCareersTap),
+              _Link(AppStrings.get('about', lang), '/about'),
+              _Link(AppStrings.get('careers', lang), '/career'),
             ]),
             const SizedBox(height: 24),
             _buildMapSection(lang),
@@ -112,27 +111,21 @@ class Footer extends StatelessWidget {
                     lang,
                     AppStrings.get('services', lang),
                     [
-                      _Link(AppStrings.get('videoProd', lang), onVideoProdTap),
-                      _Link(
-                        AppStrings.get('googleMeta', lang),
-                        onGoogleMetaTap,
-                      ),
-                      _Link(AppStrings.get('mapping', lang), onMappingTap),
-                      _Link(AppStrings.get('tour360', lang), onTour360Tap),
-                      _Link(AppStrings.get('adConsult', lang), onAdConsultTap),
+                      _Link(AppStrings.get('videoProd', lang), '/videoProd'),
+                      _Link(AppStrings.get('googleMeta', lang), '/googleMeta'),
+                      _Link(AppStrings.get('mapping', lang), '/mapping'),
+                      _Link(AppStrings.get('tour360', lang), '/tour360'),
+                      _Link(AppStrings.get('adConsult', lang), '/adConsult'),
                       _Link(
                         AppStrings.get('socialMedia', lang),
-                        onSocialMediaTap,
+                        '/socialMedia',
                       ),
                       _Link(
                         AppStrings.get('graphicDesign', lang),
-                        onGraphicDesignTap,
+                        '/graphicDesign',
                       ),
-                      _Link(AppStrings.get('webDev', lang), onWebDevTap),
-                      _Link(
-                        AppStrings.get('logoDesign', lang),
-                        onLogoDesignTap,
-                      ),
+                      _Link(AppStrings.get('webDev', lang), '/webDev'),
+                      _Link(AppStrings.get('logoDesign', lang), '/logoDesign'),
                     ],
                   ),
                 ),
@@ -143,8 +136,8 @@ class Footer extends StatelessWidget {
                     lang,
                     AppStrings.get('corporate', lang),
                     [
-                      _Link(AppStrings.get('about', lang), onAboutTap),
-                      _Link(AppStrings.get('careers', lang), onCareersTap),
+                      _Link(AppStrings.get('about', lang), '/about'),
+                      _Link(AppStrings.get('careers', lang), '/career'),
                     ],
                   ),
                 ),
@@ -197,8 +190,8 @@ class Footer extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           for (final link in links)
-            InkWell(
-              onTap: link.onTap,
+            MiddleClickLink(
+              url: link.route,
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 6),
                 child: Text(
