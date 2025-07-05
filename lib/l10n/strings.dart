@@ -5,11 +5,11 @@ class AppStrings {
   static const Map<String, Map<String, String>> _localizedValues = {
     'tr': {
       // Site başlığı
-      'title': 'Net Medya Grup',
+      'title': 'Sevin Ajans',
 
       // Hero bölümü
       'hero_desc': "Fikirden ekrana ",
-      'hero_desc_2': "Markanızın tüm yolculuğu Net Medya'da.",
+      'hero_desc_2': "Markanızın tüm yolculuğu Sevin Ajans'da.",
       'explore_services': 'Hizmetlerimizi Keşfet',
       'our_services': 'Hizmetlerimiz',
 
@@ -48,24 +48,24 @@ class AppStrings {
 
       // Sabit karttaki etiketler
       'contact_email_label': 'E-posta',
-      'contact_email_value': 'info@netmedya.tr',
+      'contact_email_value': 'info@sevinajans.com',
       'contact_support_label': 'Müşteri Desteği',
       'contact_support_value': '0507 208 95 98',
       'contact_office_gsm_label': 'Ofis GSM',
       'contact_office_gsm_value': '0505 351 11 52',
 
       // Adresler
-      'address_general_label': 'Genel Merkez',
-      'address_general_value':
-          'Kavaklıdere, Esat Cd. 12/2, 06680 Çankaya/Ankara',
-      'address_management_label': 'Yönetim Ofisi',
-      'address_management_value':
-          'Güçlükaya, Evrim Sk. No:6, 06310 Keçiören/Ankara',
+      //'address_general_label': 'Genel Merkez',
+      //'address_general_value':
+      //    'Kavaklıdere, Esat Cd. 12/2, 06680 Çankaya/Ankara',
+      //'address_management_label': 'Yönetim Ofisi',
+      //'address_management_value':
+      //    'Güçlükaya, Evrim Sk. No:6, 06310 Keçiören/Ankara',
 
       // Footer
-      'footer_copyright': '© 2025 Net Medya Grup. Tüm hakları saklıdır.',
+      'footer_copyright': '© 2025 Sevin Ajans. Tüm hakları saklıdır.',
       'footer_motto': 'İnovatif Fikirlerin Birleştiği Bir Vizyon',
-      'footer_company': 'Net Medya Grup',
+      'footer_company': 'Sevin Ajans',
       'footer_location': 'Size Çok Yakınız',
 
       // Header menüleri
@@ -92,13 +92,13 @@ class AppStrings {
 
       // Prodüksiyon çözümleri
       'prod_title':
-          'Net Medya Grup olarak, markanızı en net haliyle yansıtan prodüksiyon çözümleri sunuyoruz.',
+          'Sevin Ajans olarak, markanızı en net haliyle yansıtan prodüksiyon çözümleri sunuyoruz.',
       'prod_desc':
           'Görsel anlatım gücüne inanıyoruz. Bu yüzden her karede kaliteyi, her videoda etkiyi önceliklendiriyoruz. '
           'Profesyonel ekipmanlarımız ve yaratıcı bakış açımızla; tanıtım filmleri, reklam çekimleri, drone görüntüleri ve '
           '360 derece sanal turlar gibi hizmetlerde markanızı rakiplerinizden ayrıştırıyoruz.\n'
           'Doğru prodüksiyon ajansı seçimi, marka algınızı ve dijital görünürlüğünüzü doğrudan etkiler.\n'
-          'Net Medya Grup, her projeye özel çözümler sunar; hızlı teslim, yüksek çözünürlük ve kurumsal vizyona uygunluk '
+          'Sevin Ajans, her projeye özel çözümler sunar; hızlı teslim, yüksek çözünürlük ve kurumsal vizyona uygunluk '
           'bizim standartlarımızdır.',
       'prod_link':
           'Dijital Dünyada Net ve Etkili Adımlar atmak için, güçlü bir prodüksiyonla başlayın.',
@@ -207,7 +207,7 @@ Sosyal medyada stratejik ilerliyoruz “çünkü” sadece görünür olmak değ
 Drone’dan sanal tura kadar tüm prodüksiyon süreçlerini titizlikle yürütüyoruz “çünkü” fark edilmeniz için her açıyı değerlendiriyoruz!
 
 Her projede; markanın sektörünü, hedef kitlesini ve vizyonunu merkeze alırız. Ürettiğimiz içerikler; keşfedilirlik sağlayan, etkileşimi artıran ve satışa dönüşen stratejilere dayanır.
-Net Medya Grup olarak, dijitalde güçlü ve sürdürülebilir bir varlık oluşturmak isteyen tüm markaları, yaratıcı ve profesyonel çözümlerle tanışmaya davet ediyoruz.''',
+Sevin Ajans olarak, dijitalde güçlü ve sürdürülebilir bir varlık oluşturmak isteyen tüm markaları, yaratıcı ve profesyonel çözümlerle tanışmaya davet ediyoruz.''',
 
       // “Reklam Yönetimi Danışmanlığı” sayfa başlığı
       'adconsult_page_title': 'Reklam Yönetimi Danışmanlığı',
@@ -222,7 +222,7 @@ Net Medya Grup olarak, dijitalde güçlü ve sürdürülebilir bir varlık oluş
 
 Reklam yönetimi artık sadece içerik üretmekten ibaret değil; doğru platform, doğru zamanlama ve doğru analizle yürütülmesi gereken çok yönlü bir süreçtir.
 
-Net Medya Grup olarak, dijitalden geleneksele kadar tüm reklam kanallarınız için stratejik danışmanlık sunuyoruz.
+Sevin Ajans olarak, dijitalden geleneksele kadar tüm reklam kanallarınız için stratejik danışmanlık sunuyoruz.
 
 Markanızın hedeflerini, sektörel dinamiklerini ve rakip analizlerini inceleyerek size özel bir reklam haritası oluşturuyoruz.
 
@@ -244,7 +244,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'google_meta_para2':
           'Dijital reklam platformları artık sadece görünür olmak için değil, satış, bilinirlik ve etkileşim için stratejik olarak kullanılmalı.',
       'google_meta_para3':
-          'Net Medya Grup olarak, Google Ads ve Meta (Instagram & Facebook) reklam yönetimini veriye dayalı, hedef odaklı ve yaratıcı yaklaşımlarla yürütüyoruz.',
+          'Sevin Ajans olarak, Google Ads ve Meta (Instagram & Facebook) reklam yönetimini veriye dayalı, hedef odaklı ve yaratıcı yaklaşımlarla yürütüyoruz.',
       'google_meta_para4':
           'Reklam kampanyalarınızı planlarken, doğru hedef kitle analizi yapar, içeriklerinizi stratejiye uygun hale getirir ve reklam sürecini baştan sona yönetiriz.',
       'google_meta_para5':
@@ -262,7 +262,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'graphic_design_para2':
           'Grafik tasarım, markanızın dijital ve fiziksel tüm mecralarda tutarlı, estetik ve profesyonel görünmesini sağlar. Ancak sadece güzel görünmek yetmez; doğru mesaj, doğru biçimle verilmelidir.',
       'graphic_design_para3':
-          'Net Medya Grup olarak, kreatif tasarım anlayışımızı markanızın hedef kitlesi ve sektörüne uygun biçimde şekillendiriyor; işlevsel ve fark edilir tasarımlar üretiyoruz.',
+          'Sevin Ajans olarak, kreatif tasarım anlayışımızı markanızın hedef kitlesi ve sektörüne uygun biçimde şekillendiriyor; işlevsel ve fark edilir tasarımlar üretiyoruz.',
       'graphic_design_para4':
           'Sosyal medya gönderilerinden kurumsal sunumlara, reklam afişlerinden katalog ve broşür tasarımlarına kadar geniş bir yelpazede hizmet sunuyoruz.',
       'graphic_design_para5':
@@ -280,7 +280,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'logo_design_para2':
           'Logo, markanızın dijitalde bıraktığı ilk izlenimdir. Ama sadece estetik değil; anlamlı, özgün ve sürdürülebilir olması gerekir.',
       'logo_design_para3':
-          'Net Medya Grup olarak, tasarıma başlamadan önce markanızın sektörel dinamiklerini, hedef kitlesini ve değerlerini analiz ediyor; buna uygun, uzun ömürlü ve akılda kalıcı logolar tasarlıyoruz.',
+          'Sevin Ajans olarak, tasarıma başlamadan önce markanızın sektörel dinamiklerini, hedef kitlesini ve değerlerini analiz ediyor; buna uygun, uzun ömürlü ve akılda kalıcı logolar tasarlıyoruz.',
       'logo_design_para4':
           'Kurumsal kimlik ise markanızın tüm platformlarda aynı dili konuşmasını sağlar. Logo tasarımıyla uyumlu şekilde; kartvizit, antetli kağıt, sunum şablonları, e-posta imzaları gibi tüm kurumsal dokümanlarınızı tasarlıyor ve profesyonel bir marka görünümü oluşturuyoruz.',
       'logo_design_para5':
@@ -298,7 +298,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'social_media_para2':
           'Sosyal medya, markanızın dijital dünyadaki sesi ve yüzüdür. Ama her platformda görünmek değil; doğru yerde, doğru içerikle görünmek önemlidir.',
       'social_media_para3':
-          'Net Medya Grup olarak, sosyal medya yönetimini yalnızca paylaşım yapmakla sınırlı görmüyoruz. Her marka için özel olarak hazırladığımız stratejilerle; hedef kitlenizle doğru bağ kurmanızı, etkileşimi artırmanızı ve görünürlüğünüzü sağlamlaştırmanızı sağlıyoruz.',
+          'Sevin Ajans olarak, sosyal medya yönetimini yalnızca paylaşım yapmakla sınırlı görmüyoruz. Her marka için özel olarak hazırladığımız stratejilerle; hedef kitlenizle doğru bağ kurmanızı, etkileşimi artırmanızı ve görünürlüğünüzü sağlamlaştırmanızı sağlıyoruz.',
       'social_media_para4':
           'Her ay düzenli raporlamalarla, yaptıklarımızı sayılarla somutlaştırıyor; içeriklerimizi prodüksiyon gücümüzle birleştirerek fark yaratıyoruz.',
       'social_media_para5':
@@ -314,7 +314,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'video_prod_para3':
           'Görsel içerikler, dijital dünyada markanızın en net ve kalıcı ifadesidir. Ama sadece görüntü yakalamak yetmez; doğru açı, doğru kurgu ve doğru kurumsallık gerekir.',
       'video_prod_para4':
-          'Net Medya Grup olarak; tanıtım filmleri, reklam videoları, kurumsal fotoğraf çekimleri ve drone görüntüleme hizmetlerimizle markanıza özel içerikler üretiyoruz.',
+          'Sevin Ajans olarak; tanıtım filmleri, reklam videoları, kurumsal fotoğraf çekimleri ve drone görüntüleme hizmetlerimizle markanıza özel içerikler üretiyoruz.',
       'video_prod_para5':
           'Her projede, hedef kitlenizi ve kullanım alanınızı analiz ederek; ister sosyal medya, ister web sitesi, ister TV yayınları için profesyonel çözümler sunuyoruz.',
       'video_prod_para6':
@@ -330,7 +330,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'promo_video_para3':
           'Tanıtım filmi, işletmenizin dijital vitrini gibidir. Ama herkesin tanıttığı şekilde değil, sizi siz yapan detaylarla hazırlanmalıdır.',
       'promo_video_para4':
-          'Net Medya Grup olarak; senaryo, çekim, kurgu ve müzik seçiminden post-prodüksiyona kadar tüm süreçleri kendi bünyemizde yürüterek markanıza özel ve yüksek kaliteli tanıtım filmleri üretiyoruz.',
+          'Sevin Ajans olarak; senaryo, çekim, kurgu ve müzik seçiminden post-prodüksiyona kadar tüm süreçleri kendi bünyemizde yürüterek markanıza özel ve yüksek kaliteli tanıtım filmleri üretiyoruz.',
       'promo_video_para5':
           'Kurumsal vizyonunuzu doğru anlatmak, hedef kitlenizi etkilemek ve dijitalde fark yaratmak istiyorsanız, ilk adımı birlikte atalım.',
 
@@ -342,7 +342,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'reels_para3':
           'Reels içerikler, markaların sosyal medyada büyümesini sağlayan en hızlı yoldur. Ama bu hızın arkasında yaratıcılık, planlama ve doğru prodüksiyon vardır.',
       'reels_para4':
-          'Net Medya Grup olarak, sosyal medya trendlerine uygun, dikey formatta, etkili kurgu ve güçlü görsellerle reels videolar üretiyor; hem paylaşılabilirlik oranınızı artırıyor hem de dijitalde fark edilmenizi sağlıyoruz.',
+          'Sevin Ajans olarak, sosyal medya trendlerine uygun, dikey formatta, etkili kurgu ve güçlü görsellerle reels videolar üretiyor; hem paylaşılabilirlik oranınızı artırıyor hem de dijitalde fark edilmenizi sağlıyoruz.',
       'reels_para5':
           'Tıklanabilir, paylaşılabilir ve konuşulabilir içerikler için doğru yerdesiniz.',
 
@@ -354,7 +354,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'product_photo_para3':
           'E-ticaret platformlarında rekabet, görselle başlar. Ama sadece ürününüzü göstermek değil; doğru ışıkla, doğru açıyla ve profesyonel teknikle sunmak gerekir.',
       'product_photo_para4':
-          'Net Medya Grup olarak, e-ticaret odaklı profesyonel ürün çekimleriyle markanızın dijital vitrini güçlendiriyoruz.',
+          'Sevin Ajans olarak, e-ticaret odaklı profesyonel ürün çekimleriyle markanızın dijital vitrini güçlendiriyoruz.',
       'product_photo_para5':
           'Her ürün için beyaz fonda sade görsellerden, kullanım alanına özel konsept çekimlere kadar geniş bir prodüksiyon altyapısı sunuyoruz.',
       'product_photo_para6':
@@ -373,7 +373,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'virtual_tour_para2':
           'Sanal tur teknolojisi, otel, restoran, klinik, okul, emlak ofisi ve daha birçok sektörde müşteri deneyimini artıran bir araçtır.',
       'virtual_tour_para3':
-          'Net Medya Grup olarak Insta360 kameralardan başlayarak, profesyonel çekim, düzenleme ve web entegrasyonuna kadar tüm süreci yönetiyoruz. Google Haritalar ve web sitenize entegre edilebilen bu turlar, kullanıcıyı içeri çeker ve güven kazandırır.',
+          'Sevin Ajans olarak Insta360 kameralardan başlayarak, profesyonel çekim, düzenleme ve web entegrasyonuna kadar tüm süreci yönetiyoruz. Google Haritalar ve web sitenize entegre edilebilen bu turlar, kullanıcıyı içeri çeker ve güven kazandırır.',
       'virtual_tour_para4':
           'Mekânınızı öne çıkaran, sürükleyici bir dijital deneyim sunmak istiyorsanız, sanal tur ile fark yaratın.',
       'virtual_tour_cta': 'Hemen İletişime Geçin',
@@ -387,7 +387,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'visual_mapping_para2':
           'Görsel haritalama ve 3D modelleme, mimarlık, inşaat, otomotiv, endüstri ve e-ticaret gibi pek çok alanda artık yalnızca sunum değil, karar alma ve ikna süreçlerinde stratejik bir araçtır.',
       'visual_mapping_para3':
-          'Net Medya Grup olarak; bina dışı çekimleri, araç ve ürün görselleştirmeleri gibi birçok alanda profesyonel modelleme hizmeti sunuyoruz.',
+          'Sevin Ajans olarak; bina dışı çekimleri, araç ve ürün görselleştirmeleri gibi birçok alanda profesyonel modelleme hizmeti sunuyoruz.',
       'visual_mapping_para4':
           'Drone ile yapılan yüksek çözünürlüklü çekimlerden başlayarak, tüm görsel verileri işliyor, detaylı 3D modellere dönüştürüyor ve kullanılabilir formatlara entegre ediyoruz.',
       'visual_mapping_para5':
@@ -407,7 +407,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'web_dev_para2':
           'Web siteniz, dijital dünyadaki en önemli temsilcinizdir. Ancak yalnızca estetik değil; hızlı, mobil uyumlu, SEO dostu ve dönüşüm odaklı olması gerekir.',
       'web_dev_para3':
-          'Net Medya Grup olarak, markanıza özel web arayüzleri geliştiriyor; kullanıcı deneyimini ve performansı merkeze alan tasarımlar üretiyoruz.',
+          'Sevin Ajans olarak, markanıza özel web arayüzleri geliştiriyor; kullanıcı deneyimini ve performansı merkeze alan tasarımlar üretiyoruz.',
       'web_dev_para4':
           'Kurumsal web sitelerinden e-ticaret platformlarına, landing page çözümlerinden çok dilli projelere kadar her ihtiyacınıza uygun geliştirme süreçleri sunuyoruz.',
       'web_dev_para5':
@@ -429,7 +429,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'aboutSectionParagraph4':
           'Bu ödüller, strateji, üretim ve yaratıcılık konusundaki kararlılığımızın bir göstergesi.',
       'aboutSectionParagraph5':
-          'Net Medya Grup olarak, dijitalde kalıcı ve etkili izler bırakmaya devam ediyoruz.',
+          'Sevin Ajans olarak, dijitalde kalıcı ve etkili izler bırakmaya devam ediyoruz.',
 
       "team_section_title": "Yönetim Kurulu",
       "see_more": "→ Detayı Gör",
@@ -444,7 +444,7 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'career_step_1': 'Görüşme',
       'career_step_2': 'Lider ile Sohbet',
       'career_step_3': 'Aramıza Hoşgeldin',
-      'career_desc_0': 'Net Medya Ailesine katılmak mı istiyorsunuz?...',
+      'career_desc_0': 'Sevin Ajans Ailesine katılmak mı istiyorsunuz?...',
       'career_desc_1': 'Takım liderlerimizle hızlı bir tanışma sohbeti.',
       'career_desc_2': 'Teknik ve kültürel sohbet ile süreci keşfedin.',
       'career_desc_3': 'Hoşgeldiniz! Aramıza katıldınız.',
@@ -460,10 +460,10 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
     },
     'en': {
       // aynı İngilizce karşılıklar…
-      'title': 'Net Media Group',
+      'title': 'Sevin Agency',
 
       'hero_desc': "Your brand's entire journey ",
-      'hero_desc_2': "from idea to screen is on Net Medya.",
+      'hero_desc_2': "from idea to screen is on Sevin Ajans.",
 
       'explore_services': 'Explore Our Services',
       'our_services': 'Our Services',
@@ -494,22 +494,21 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
           'Contact us for all your needs in design, production, or ad management.',
 
       'contact_email_label': 'Email',
-      'contact_email_value': 'info@netmedya.tr',
+      'contact_email_value': 'info@sevinajans.com',
       'contact_support_label': 'Customer Support',
       'contact_support_value': '0507 208 95 98',
       'contact_office_gsm_label': 'Office GSM',
       'contact_office_gsm_value': '0505 351 11 52',
 
-      'address_general_label': 'Head Office',
-      'address_general_value':
-          'Kavaklıdere, Esat Cd. 12/2, 06680 Çankaya/Ankara',
-      'address_management_label': 'Management Office',
-      'address_management_value':
-          'Güçlükaya, Evrim Sk. No:6, 06310 Keçiören/Ankara',
-
-      'footer_copyright': '© 2025 Net Media Group. All rights reserved.',
+      //'address_general_label': 'Head Office',
+      //'address_general_value':
+      //    'Kavaklıdere, Esat Cd. 12/2, 06680 Çankaya/Ankara',
+      //'address_management_label': 'Management Office',
+      //'address_management_value':
+      //    'Güçlükaya, Evrim Sk. No:6, 06310 Keçiören/Ankara',
+      'footer_copyright': '© 2025 Sevin Agency. All rights reserved.',
       'footer_motto': 'A Vision Where Innovative Ideas Unite',
-      'footer_company': 'Net Media Group',
+      'footer_company': 'Sevin Agency',
       'footer_location': 'We Are Very Close to You',
 
       'corporate': 'Corporate',
@@ -533,13 +532,13 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'services': 'Services',
 
       'prod_title':
-          'At Net Media Group, we offer production solutions that reflect your brand in the clearest form.',
+          'At Sevin Agency, we offer production solutions that reflect your brand in the clearest form.',
       'prod_desc':
           'We believe in the power of visual storytelling. That’s why we prioritize quality in every frame and impact in every video. '
           'With our professional equipment and creative approach, we differentiate your brand from competitors through services such as promotional '
           'films, commercials, drone footage, and 360° virtual tours.\n'
           'Choosing the right production agency directly affects your brand perception and digital visibility.\n'
-          'Net Media Group delivers custom solutions for every project; fast delivery, high resolution, and alignment with your corporate vision are our standards.',
+          'Sevin Agency delivers custom solutions for every project; fast delivery, high resolution, and alignment with your corporate vision are our standards.',
       'prod_link':
           'Start with a powerful production to take clear and effective steps in the digital world.',
 
@@ -645,7 +644,7 @@ We move strategically on social media “because” we aim not just to be seen, 
 From drone to virtual tours, we carry out every production process with precision “because” we evaluate every angle to make you stand out!
 
 On every project, we place the brand’s industry, target audience, and vision at the core. The content we create is based on strategies that enhance discoverability, boost engagement, and convert into sales.
-As Net Media Group, we invite all brands aiming to establish a powerful and sustainable digital presence to meet our creative and professional solutions.''',
+As Sevin Agency, we invite all brands aiming to establish a powerful and sustainable digital presence to meet our creative and professional solutions.''',
 
       // “Ad Management Consultancy” page title
       'adconsult_page_title': 'Ad Management Consultancy',
@@ -660,7 +659,7 @@ As Net Media Group, we invite all brands aiming to establish a powerful and sust
 
 Ad management is no longer just about producing content; it’s a multifaceted process that requires the right platform, timing, and analysis.
 
-At Net Media Group, we offer strategic consultancy for all your ad channels, from digital to traditional.
+At Sevin Agency, we offer strategic consultancy for all your ad channels, from digital to traditional.
 
 We analyze your brand’s goals, sector dynamics, and competitor benchmarks to create a custom ad roadmap for you.
 
@@ -682,7 +681,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'google_meta_para2':
           'Digital advertising platforms should be used not only for visibility but to drive sales, awareness, and engagement strategically.',
       'google_meta_para3':
-          'At Net Media Group, we manage Google Ads and Meta (Instagram & Facebook) campaigns with data-driven, targeted, and creative approaches.',
+          'At Sevin Agency, we manage Google Ads and Meta (Instagram & Facebook) campaigns with data-driven, targeted, and creative approaches.',
       'google_meta_para4':
           'When planning your campaigns, we conduct precise audience analysis, tailor your content to the strategy, and manage the process end-to-end.',
       'google_meta_para5':
@@ -700,7 +699,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'graphic_design_para2':
           'Graphic design ensures your brand looks consistent, aesthetic, and professional across all digital and physical channels. But looking good isn’t enough; the right message must be delivered in the right form.',
       'graphic_design_para3':
-          'At Net Media Group, we shape our creative design approach to fit your audience and industry, delivering functional and memorable designs.',
+          'At Sevin Agency, we shape our creative design approach to fit your audience and industry, delivering functional and memorable designs.',
       'graphic_design_para4':
           'From social media posts to corporate presentations, from ad posters to catalogs and brochures, we offer a wide range of services.',
       'graphic_design_para5':
@@ -718,7 +717,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'logo_design_para2':
           'A logo is your brand’s first digital impression. It must be not only aesthetic but meaningful, original, and sustainable.',
       'logo_design_para3':
-          'At Net Media Group, we analyze your industry dynamics, audience, and values before designing logos that are long-lasting and memorable.',
+          'At Sevin Agency, we analyze your industry dynamics, audience, and values before designing logos that are long-lasting and memorable.',
       'logo_design_para4':
           'Corporate identity ensures a unified voice across all platforms. We design your business cards, letterheads, presentation templates, email signatures, and more.',
       'logo_design_para5':
@@ -736,7 +735,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'social_media_para2':
           'Social media is your brand’s voice and face in the digital world. But it’s not about being present on every platform; it’s about appearing in the right place with the right content.',
       'social_media_para3':
-          'At Net Media Group, we don’t limit social media management to posting. With custom strategies for each brand, we help you connect with your target audience, boost engagement, and solidify your visibility.',
+          'At Sevin Agency, we don’t limit social media management to posting. With custom strategies for each brand, we help you connect with your target audience, boost engagement, and solidify your visibility.',
       'social_media_para4':
           'With monthly reports, we quantify our work, and by combining content with our production power, we create real impact.',
       'social_media_para5':
@@ -752,7 +751,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'video_prod_para3':
           'Visual content is your brand’s clearest and most lasting expression in the digital world. But capturing images alone isn’t enough; you need the right angle, the right edit, and the right professionalism.',
       'video_prod_para4':
-          'At Net Media Group, we create custom content for your brand with promotional films, commercials, corporate photography, and drone footage.',
+          'At Sevin Agency, we create custom content for your brand with promotional films, commercials, corporate photography, and drone footage.',
       'video_prod_para5':
           'On every project, we analyze your target audience and use case to deliver professional solutions for social media, websites, or TV broadcasts.',
       'video_prod_para6':
@@ -768,7 +767,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'promo_video_para3':
           'A promotional video is your business’s digital showcase. But it shouldn’t be done like everyone else’s; it should highlight the details that make you unique.',
       'promo_video_para4':
-          'At Net Media Group, we handle the entire process in-house—from script and shooting to editing and music selection—to create unique, high-quality promotional videos.',
+          'At Sevin Agency, we handle the entire process in-house—from script and shooting to editing and music selection—to create unique, high-quality promotional videos.',
       'promo_video_para5':
           'If you want to accurately convey your corporate vision, engage your audience, and stand out digitally, let’s take the first step together.',
 
@@ -780,7 +779,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'reels_para3':
           'Reels are the fastest way for brands to grow on social media. But behind that speed is creativity, planning, and the right production.',
       'reels_para4':
-          'At Net Media Group, we produce trend-driven, vertical-format reels with impactful editing and strong visuals—boosting your shareability and digital visibility.',
+          'At Sevin Agency, we produce trend-driven, vertical-format reels with impactful editing and strong visuals—boosting your shareability and digital visibility.',
       'reels_para5':
           'You’re in the right place for clickable, shareable, and talk-worthy content.',
 
@@ -792,7 +791,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'product_photo_para3':
           'Competition on e-commerce platforms starts with visuals. But it’s not just about showing your product—it’s about presenting it with the right lighting, angle, and professional technique.',
       'product_photo_para4':
-          'At Net Media Group, we strengthen your brand’s digital showcase with e-commerce-focused professional product photography.',
+          'At Sevin Agency, we strengthen your brand’s digital showcase with e-commerce-focused professional product photography.',
       'product_photo_para5':
           'We offer a wide production infrastructure—from clean white-background shots to concept photography tailored to usage scenarios—for every product.',
       'product_photo_para6':
@@ -811,7 +810,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'virtual_tour_para2':
           'Virtual tour technology is a tool that enhances customer experience in hotels, restaurants, clinics, schools, real estate offices, and many other sectors.',
       'virtual_tour_para3':
-          'At Net Media Group, we manage the entire process—from Insta360 camera shooting to professional editing and web integration. These tours, which can be embedded into Google Maps and your website, draw users in and build trust.',
+          'At Sevin Agency, we manage the entire process—from Insta360 camera shooting to professional editing and web integration. These tours, which can be embedded into Google Maps and your website, draw users in and build trust.',
       'virtual_tour_para4':
           'If you want to showcase your space and offer an immersive digital experience, stand out with a virtual tour.',
       'virtual_tour_cta': 'Contact Us Now',
@@ -825,7 +824,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'visual_mapping_para2':
           'Visual mapping and 3D modeling have become a strategic tool not only for presentations but also for decision-making and persuasion processes in architecture, construction, automotive, industry, and e-commerce.',
       'visual_mapping_para3':
-          'At Net Media Group, we offer professional modeling services in areas such as exterior building shoots, vehicle and product visualizations.',
+          'At Sevin Agency, we offer professional modeling services in areas such as exterior building shoots, vehicle and product visualizations.',
       'visual_mapping_para4':
           'Starting with high-resolution drone footage, we process all visual data, convert it into detailed 3D models, and integrate it into usable formats.',
       'visual_mapping_para5':
@@ -845,7 +844,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'web_dev_para2':
           'Your website is your most important representative in the digital world. But it needs to be not only aesthetic but fast, mobile-friendly, SEO-optimized, and conversion-focused.',
       'web_dev_para3':
-          'At Net Media Group, we develop custom web interfaces centered on user experience and performance.',
+          'At Sevin Agency, we develop custom web interfaces centered on user experience and performance.',
       'web_dev_para4':
           'From corporate websites to e-commerce platforms, landing page solutions to multilingual projects, we offer development processes tailored to every need.',
       'web_dev_para5':
@@ -867,7 +866,7 @@ If you want to strengthen your brand perception, make the most of your investmen
       'aboutSectionParagraph4':
           'These awards are a testament to our commitment to strategy, production, and creativity.',
       'aboutSectionParagraph5':
-          'At Net Media Group, we continue to leave lasting and effective marks in the digital realm.',
+          'At Sevin Agency, we continue to leave lasting and effective marks in the digital realm.',
 
       "team_section_title": "Board of Directors",
       "see_more": "→ See Details",

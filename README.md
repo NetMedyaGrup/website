@@ -1,6 +1,6 @@
-# Net Medya Grup Website
+# Sevin Ajans Website
 
-Net Medya Grup'un resmi web sitesi. Şirketimiz hakkında bilgi edinmek, hizmetlerimizi keşfetmek ve iletişim kurmak için tasarlanmıştır.
+Sevin Ajans'un resmi web sitesi. Şirketimiz hakkında bilgi edinmek, hizmetlerimizi keşfetmek ve iletişim kurmak için tasarlanmıştır.
 
 ## Getting Started
 

@@ -47,7 +47,7 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
   }) : super(key: key);
 
   @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(150);
 
   void _launch(String url) async {
     final uri = Uri.parse(url);
@@ -179,7 +179,7 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
                   child: ElevatedButton(
                     onPressed: onContactTap,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(102, 153, 204, 255),
+                      backgroundColor: const Color.fromARGB(102, 31, 32, 32),
                       padding: const EdgeInsets.symmetric(vertical: 14),
                       textStyle: const TextStyle(
                         fontSize: 16,
@@ -302,7 +302,7 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
       return SafeArea(
         child: Container(
           color: Colors.transparent,
-          height: kToolbarHeight,
+          height: kToolbarHeight + 10,
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             children: [
@@ -322,12 +322,15 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
     return SafeArea(
       child: Container(
         color: Colors.transparent,
-        height: kToolbarHeight,
+        height: preferredSize.height,
         alignment: Alignment.center,
         padding: const EdgeInsets.symmetric(horizontal: 24),
         child: Row(
           children: [
-            SiteLogo(height: 80, width: 160, onTap: onLogoTap),
+            Padding(
+              padding: const EdgeInsets.only(top: 20.0, left: 20.0),
+              child: SiteLogo(height: 130, width: 130, onTap: onLogoTap),
+            ),
             const Spacer(),
             HoverMenu(
               title: MiddleClickLink(

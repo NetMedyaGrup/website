@@ -24,13 +24,15 @@ class _ReferencesViewState extends State<ReferencesView> {
   final ScrollController _scrollController = ScrollController();
 
   static const List<String> _logoPaths = [
-    'assets/images/refs/AlohaBurgerito.png',
-    'assets/images/refs/arquetlgoob.png',
-    'assets/images/refs/defaultofficeimage.png',
-    'assets/images/refs/logo_brass-transformed.png',
-    'assets/images/refs/n5.png',
+    'assets/images/refs/borusan.png',
     'assets/images/refs/pepsi-logo_brandlogos.net_3bfir.png',
+    'assets/images/refs/defaultofficeimage.png',
+    'assets/images/refs/n5.png',
     'assets/images/refs/simlogo-Kopya.png',
+    'assets/images/refs/AlohaBurgerito.png',
+    'assets/images/refs/vipbeyaz.png',
+    'assets/images/refs/arquetlgoob.png',
+    'assets/images/refs/logo_brass-transformed.png',
     'assets/images/refs/cimcim.png',
     'assets/images/refs/shebit.png',
   ];

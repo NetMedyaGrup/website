@@ -167,46 +167,39 @@ class _WorksViewState extends State<WorksView> {
                   final p = projects[idx];
                   return MiddleClickAction(
                     onActivate: () {
+                      // 1: Katalog Fotoğraf
+                      if (p.title == titles[0]) {
+                        _openLink('https://www.instagram.com/p/DHA8peFoyZ0');
+                        return;
+                      }
                       // 1: Ürün Fotoğraf
                       if (p.title == titles[1]) {
-                        _openLink(
-                          'https://www.instagram.com/share/p/BAHoMhhZLG',
-                        );
+                        _openLink('https://www.instagram.com/p/DHA8peFoyZ0');
                         return;
                       }
                       // 2: Ürün Video
                       if (p.title == titles[2]) {
-                        _openLink(
-                          'https://www.instagram.com/share/reel/__OZrAd-Q',
-                        );
+                        _openLink('https://www.instagram.com/p/DHBTqttovaO/');
                         return;
                       }
                       // 3: Sinematik
                       if (p.title == titles[3]) {
-                        _openLink(
-                          'https://www.instagram.com/share/reel/BAPMia-Tcb',
-                        );
+                        _openLink('https://www.instagram.com/p/DFsaqhLoEdX/');
                         return;
                       }
                       // 4: Trend
                       if (p.title == titles[4]) {
-                        _openLink(
-                          'https://www.instagram.com/share/reel/_eACrgClN',
-                        );
+                        _openLink('https://www.instagram.com/p/DHA7mzBIAuU/');
                         return;
                       }
                       // 5: Drone Fotoğraf
                       if (p.title == titles[5]) {
-                        _openLink(
-                          'https://www.instagram.com/share/p/DRONE_PHOTO_LINK',
-                        );
+                        _openLink('https://www.instagram.com/p/DLK_z9Wor6z/');
                         return;
                       }
                       // 6: Drone Video
                       if (p.title == titles[6]) {
-                        _openLink(
-                          'https://www.instagram.com/share/reel/DRONE_VIDEO_LINK',
-                        );
+                        _openLink('https://www.instagram.com/p/DLK_z9Wor6z/');
                         return;
                       }
                       // 7: Sanal Tur (Kuula)

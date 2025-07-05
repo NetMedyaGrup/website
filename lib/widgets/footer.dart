@@ -98,7 +98,7 @@ class Footer extends StatelessWidget {
               _Link(AppStrings.get('careers', lang), '/career'),
             ]),
             const SizedBox(height: 24),
-            _buildMapSection(lang),
+            // _buildMapSection(lang),
           ] else ...[
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -142,7 +142,7 @@ class Footer extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 40),
-                Expanded(flex: 3, child: _buildMapSection(lang)),
+                //Expanded(flex: 3, child: _buildMapSection(lang)),
               ],
             ),
           ],
@@ -203,7 +203,7 @@ class Footer extends StatelessWidget {
         ],
       );
 
-  Widget _buildMapSection(String lang) => Column(
+  /* Widget _buildMapSection(String lang) => Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       Text(
@@ -220,7 +220,7 @@ class Footer extends StatelessWidget {
       ),
     ],
   );
-
+*/
   Widget _buildBottomRow(String lang) {
     return Row(
       children: [

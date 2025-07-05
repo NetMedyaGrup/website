@@ -1,11 +1,11 @@
 {
-  "name": "Net Medya Grup Website",
-  "short_name": "Net Medya Grup Website",
+  "name": "Sevin Ajans Website",
+  "short_name": "Sevin Ajans Website",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#0175C2",
   "theme_color": "#0175C2",
-  "description": "Net Medya Grup Website",
+  "description": "Sevin Ajans Website",
   "orientation": "portrait-primary",
   "prefer_related_applications": false,
   "icons": [

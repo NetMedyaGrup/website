@@ -30,6 +30,7 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   final _desktopKey = GlobalKey<DesktopHomeContentState>();
   final _scrollController = ScrollController();
+  double _bgOpacity = 0;
 
   bool _showScrollUpButton = false;
   double _headerOpacity = 1.0;
@@ -42,9 +43,11 @@ class _HomeViewState extends State<HomeView> {
 
   void _onScroll() {
     final offset = _scrollController.offset;
+    final o = (offset / 200).clamp(0.0, 1.0) * 0.6;
     setState(() {
       _showScrollUpButton = offset > 400;
       _headerOpacity = offset < 200 ? 1 - (offset / 200) : 0;
+      _bgOpacity = o;
     });
   }
 
@@ -61,10 +64,10 @@ class _HomeViewState extends State<HomeView> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(kToolbarHeight),
-        child: AnimatedOpacity(
-          opacity: _headerOpacity,
+        preferredSize: const Size.fromHeight(kToolbarHeight + 100),
+        child: AnimatedContainer(
           duration: const Duration(milliseconds: 300),
+          color: Colors.black.withOpacity(_bgOpacity),
           child: Header(
             changeLanguage: widget.changeLocale,
             onLogoTap: () {

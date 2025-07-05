@@ -82,7 +82,7 @@ class _CreodiveCloneAppState extends State<CreodiveCloneApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Net Medya Grup',
+      title: 'Sevin Ajans',
       debugShowCheckedModeBanner: false,
       scrollBehavior: MyScrollBehavior(),
       theme: AppTheme.lightTheme,

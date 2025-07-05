@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/l10n/strings.dart';
 import 'package:flutter_application_2/views/services/zoho_email_service.dart';
+import 'package:dropdown_button2/dropdown_button2.dart';
 
 class ContactSection extends StatefulWidget {
   final String currentLanguageCode;
@@ -50,7 +51,15 @@ class _ContactSectionState extends State<ContactSection> {
       AppStrings.get('svc_graphic_title', lang),
       AppStrings.get('svc_video_title', lang),
       AppStrings.get('svc_web_title', lang),
-      AppStrings.get('svc_ad_title', lang),
+      AppStrings.get('svc_adsconsult_title', lang),
+      AppStrings.get('svc_reels_title', lang),
+      AppStrings.get('svc_social_title', lang),
+      AppStrings.get('svc_logo_title', lang),
+      AppStrings.get('svc_promo_title', lang),
+      AppStrings.get('svc_product_title', lang),
+      AppStrings.get('svc_tour_title', lang),
+      AppStrings.get('svc_mapping_title', lang),
+      AppStrings.get('svc_campaign_title', lang),
     ];
 
     return Form(
@@ -112,19 +121,50 @@ class _ContactSectionState extends State<ContactSection> {
           // Hizmet dropdown
           InputDecorator(
             decoration: inputDecoration.copyWith(
+              border: InputBorder.none,
+              enabledBorder: InputBorder.none,
+              disabledBorder: InputBorder.none,
+              contentPadding: EdgeInsets.zero,
               hintText: AppStrings.get('offer_service', lang),
               hintStyle: const TextStyle(color: Colors.grey),
             ),
             child: DropdownButtonHideUnderline(
-              child: DropdownButton<String>(
-                value: _selectedService,
+              child: DropdownButton2<String>(
                 isExpanded: true,
                 hint: Text(AppStrings.get('offer_service', lang)),
-                onChanged: (val) => setState(() => _selectedService = val),
                 items:
                     services
                         .map((s) => DropdownMenuItem(value: s, child: Text(s)))
                         .toList(),
+                value: _selectedService,
+                onChanged: (val) => setState(() => _selectedService = val),
+
+                // ↓ AÇILIR MENÜ STİL AYARLARI ↓
+                dropdownStyleData: DropdownStyleData(
+                  maxHeight: 200,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  scrollbarTheme: ScrollbarThemeData(
+                    thumbVisibility: MaterialStateProperty.all(true),
+                    thickness: MaterialStateProperty.all(6),
+                  ),
+                ),
+
+                // ↓ BUTON STİL AYARLARI (isteğe bağlı) ↓
+                buttonStyleData: ButtonStyleData(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: Colors.grey, width: 1),
+                    color: Colors.white,
+                  ),
+                ),
+
+                menuItemStyleData: const MenuItemStyleData(height: 48),
+
+                style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
           ),

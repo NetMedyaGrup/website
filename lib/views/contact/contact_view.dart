@@ -32,7 +32,7 @@ class ContactView extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(kToolbarHeight),
+        preferredSize: const Size.fromHeight(kToolbarHeight + 20),
         child: Header(
           changeLanguage: changeLanguage,
           onLogoTap:
@@ -234,7 +234,7 @@ class ContactView extends StatelessWidget {
                                   ),
                                   const SizedBox(height: 34),
                                   const Divider(height: 24),
-                                  // Genel Merkez Adresi
+                                  /*// Genel Merkez Adresi
                                   Text(
                                     AppStrings.get(
                                       'address_general_label',
@@ -274,7 +274,7 @@ class ContactView extends StatelessWidget {
                                       lang,
                                     ),
                                     style: const TextStyle(fontSize: 14),
-                                  ),
+                                  ),*/
                                 ],
                               ),
                             ),
@@ -323,7 +323,7 @@ class ContactView extends StatelessWidget {
 
                 const SizedBox(height: 24),
                 // ─── FULL-WIDTH TEK RENKLİ HARİTA ───
-                LayoutBuilder(
+                /* LayoutBuilder(
                   builder: (context, _) {
                     final isMobile =
                         MediaQuery.of(context).size.width < _mobileBreakpoint;
@@ -358,7 +358,7 @@ class ContactView extends StatelessWidget {
                     );
                   },
                 ),
-
+*/
                 // ─── Footer ───
                 Footer(
                   scrollController: scrollController,

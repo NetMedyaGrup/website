@@ -22,6 +22,7 @@ class AppTheme {
     appBarTheme: AppBarTheme(
       backgroundColor: CustomColor.primary,
       elevation: 0,
+      toolbarHeight: 100,
       titleTextStyle: const TextStyle(
         color: Colors.white,
         fontSize: 20,

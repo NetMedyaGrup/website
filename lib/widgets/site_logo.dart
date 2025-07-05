@@ -14,7 +14,7 @@ class SiteLogo extends StatelessWidget {
       child: Image.asset(
         'assets/images/logo.png',
         height: height,
-        width: width, // opsiyonel genişlik
+        width: width,
         fit: BoxFit.contain,
       ),
     );

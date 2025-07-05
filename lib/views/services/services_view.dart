@@ -127,7 +127,7 @@ class ServicesView extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(kToolbarHeight),
+        preferredSize: const Size.fromHeight(kToolbarHeight + 20),
         child: Container(
           color: Colors.black87,
           child: Header(
