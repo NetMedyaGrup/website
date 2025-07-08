@@ -242,16 +242,14 @@ class Footer extends StatelessWidget {
           children: [
             IconButton(
               icon: const Icon(Icons.tiktok, color: Colors.white70),
-              onPressed:
-                  () => _launch('https://www.tiktok.com/@netmedyaoffical'),
+              onPressed: () => _launch('https://www.tiktok.com/@sevinajans'),
             ),
             IconButton(
               icon: const FaIcon(
                 FontAwesomeIcons.instagram,
                 color: Colors.white70,
               ),
-              onPressed:
-                  () => _launch('https://www.instagram.com/netmedyagrup/'),
+              onPressed: () => _launch('https://www.instagram.com/sevinajans/'),
             ),
             IconButton(
               icon: const Icon(Icons.mail, color: Colors.white70),

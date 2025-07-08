@@ -255,7 +255,7 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
                         ),
                         onPressed:
                             () => _launch(
-                              'https://www.instagram.com/netmedyagrup/',
+                              'https://www.instagram.com/sevinajans/',
                             ),
                       ),
                     ],

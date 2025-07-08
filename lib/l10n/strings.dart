@@ -50,9 +50,9 @@ class AppStrings {
       'contact_email_label': 'E-posta',
       'contact_email_value': 'info@sevinajans.com',
       'contact_support_label': 'Müşteri Desteği',
-      'contact_support_value': '0507 208 95 98',
-      'contact_office_gsm_label': 'Ofis GSM',
-      'contact_office_gsm_value': '0505 351 11 52',
+      'contact_support_value': '0531 640 56 77',
+      'contact_office_gsm_label': 'WhatsApp İletişim Hattı',
+      'contact_office_gsm_value': '0531 640 56 77',
 
       // Adresler
       //'address_general_label': 'Genel Merkez',
@@ -496,9 +496,9 @@ Marka algınızı güçlendirmek, yatırımınızı doğru kullanmak ve dijitald
       'contact_email_label': 'Email',
       'contact_email_value': 'info@sevinajans.com',
       'contact_support_label': 'Customer Support',
-      'contact_support_value': '0507 208 95 98',
-      'contact_office_gsm_label': 'Office GSM',
-      'contact_office_gsm_value': '0505 351 11 52',
+      'contact_support_value': '0531 640 56 77',
+      'contact_office_gsm_label': 'WhatsApp Contact Number',
+      'contact_office_gsm_value': '0531 640 56 77',
 
       //'address_general_label': 'Head Office',
       //'address_general_value':
