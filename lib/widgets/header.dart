@@ -5,6 +5,8 @@ import 'package:flutter_application_2/widgets/site_logo.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'hover_menu.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'dart:html' as html;
 
 class Header extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onLogoTap;
@@ -50,9 +52,13 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
   Size get preferredSize => const Size.fromHeight(150);
 
   void _launch(String url) async {
-    final uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    if (kIsWeb) {
+      html.window.open(url, '_blank');
+    } else {
+      final uri = Uri.parse(url);
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(uri, mode: LaunchMode.platformDefault);
+      }
     }
   }
 
@@ -448,8 +454,7 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
             IconButton(
               icon: const FaIcon(FontAwesomeIcons.instagram),
               color: Colors.white,
-              onPressed:
-                  () => _launch('https://www.instagram.com/netmedyagrup/'),
+              onPressed: () => _launch('https://www.instagram.com/sevinajans/'),
             ),
             const SizedBox(width: 24),
             MiddleClickLink(
